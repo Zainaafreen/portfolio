@@ -3,10 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-      content="Zaina Afreen — Full-Stack Developer and UI/UX Designer specializing in React, Node.js, Flask, and PostgreSQL.">
-<meta name="keywords"
-      content="Full-Stack Developer, React Developer, Flask Developer, UI UX Designer, Portfolio">
+<meta name="description" content="Zaina Afreen — Full-Stack Developer and UI/UX Designer specializing in React, Node.js, Flask, and PostgreSQL.">
+<meta name="keywords" content="Full-Stack Developer, React Developer, Flask Developer, UI UX Designer, Portfolio">
 <meta name="author" content="Zaina Afreen A P">
 <meta property="og:title" content="Zaina Afreen A P — Full-Stack Developer">
 <meta property="og:description" content="Full-Stack Developer and UI/UX Designer specializing in React, Flask, Node.js, and PostgreSQL.">
@@ -83,30 +81,9 @@
   .hero-title { font-size:clamp(1.1rem,2.5vw,1.4rem); color:var(--muted); margin-bottom:1rem; }
   .hero-tagline { font-size:clamp(0.95rem,2vw,1.1rem); color:var(--text); opacity:0.85; margin-bottom:2.5rem; max-width:540px; margin-left:auto; margin-right:auto; }
   .hero-cta { display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
-  .hero-socials{
-  display:flex;
-  justify-content:center;
-  gap:1rem;
-  margin-top:1.8rem;
-  flex-wrap:wrap;
-}
-
-.hero-socials a{
-  color:var(--muted);
-  text-decoration:none;
-  font-size:0.9rem;
-  transition:all 0.3s;
-  padding:0.5rem 1rem;
-  border:1px solid var(--border);
-  border-radius:50px;
-  background:rgba(124,58,237,0.05);
-}
-
-.hero-socials a:hover{
-  color:var(--accent);
-  border-color:var(--accent);
-  transform:translateY(-2px);
-}
+  .hero-socials { display:flex; justify-content:center; gap:1rem; margin-top:1.8rem; flex-wrap:wrap; }
+  .hero-socials a { color:var(--muted); text-decoration:none; font-size:0.9rem; transition:all 0.3s; padding:0.5rem 1rem; border:1px solid var(--border); border-radius:50px; background:rgba(124,58,237,0.05); }
+  .hero-socials a:hover { color:var(--accent); border-color:var(--accent); transform:translateY(-2px); }
   .btn-primary { padding:0.8rem 2rem; background:var(--gradient); border:none; border-radius:50px; color:#fff; font-weight:600; cursor:pointer; text-decoration:none; font-size:0.95rem; transition:all 0.3s; display:inline-flex; align-items:center; gap:8px; }
   .btn-primary:hover { transform:translateY(-2px); box-shadow:0 8px 25px rgba(124,58,237,0.35); }
   .btn-outline { padding:0.8rem 2rem; background:transparent; border:1px solid var(--border); border-radius:50px; color:var(--text); font-weight:500; cursor:pointer; text-decoration:none; font-size:0.95rem; transition:all 0.3s; display:inline-flex; align-items:center; gap:8px; }
@@ -154,6 +131,7 @@
   .timeline-role { font-size:1.05rem; font-weight:700; color:var(--text); }
   .timeline-company { font-size:0.88rem; color:var(--accent); font-weight:500; margin-bottom:0.4rem; }
   .timeline-period { font-size:0.8rem; color:var(--muted); background:rgba(124,58,237,0.08); border:1px solid var(--border); border-radius:50px; padding:0.2rem 0.8rem; white-space:nowrap; }
+  .timeline-stack { font-size:0.78rem; color:var(--muted); margin-bottom:0.6rem; font-style:italic; }
   .timeline-desc { color:var(--muted); font-size:0.9rem; line-height:1.7; }
   .timeline-desc li { margin-bottom:0.4rem; padding-left:0.5rem; }
   .timeline-desc ul { padding-left:1rem; }
@@ -167,6 +145,7 @@
   .project-desc { color:var(--muted); font-size:0.9rem; margin-bottom:1.2rem; line-height:1.7; }
   .tech-stack { display:flex; flex-wrap:wrap; gap:6px; }
   .tech-pill { background:rgba(124,58,237,0.08); border:1px solid rgba(124,58,237,0.18); border-radius:50px; padding:0.25rem 0.7rem; font-size:0.75rem; color:var(--accent); font-weight:500; }
+  .project-links { display:flex; gap:0.8rem; margin-top:1.2rem; flex-wrap:wrap; }
 
   #education { background:var(--bg2); }
   .edu-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:1.5rem; }
@@ -250,11 +229,7 @@
     <p class="hero-title">Full-Stack Developer &amp; UI/UX Designer</p>
     <p class="hero-tagline">Building scalable full-stack applications with modern UI, secure backend systems, and real-world user experiences.</p>
     <div class="hero-cta">
-      <a href="resume.pdf"
-      download
-      class="btn-outline">
-      Download Resume
-      </a>
+      <a href="resume.pdf" download class="btn-outline">Download Resume</a>
       <a href="#projects" class="btn-primary">
         <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
         View Projects
@@ -285,13 +260,13 @@
         <div class="section-line reveal delay-1"></div>
         <div class="reveal delay-2">
           <p>I'm a Full-Stack Developer and UI/UX Designer with real-world internship experience building responsive web applications and intuitive user interfaces. Currently pursuing my B.E. in Computer Science at C. Abdul Hakeem College of Engineering &amp; Technology with a CGPA of 8.3.</p>
-          <p>Proficient in the MERN stack, Python/Flask, and RESTful API integration, I love translating user needs into clean, accessible digital products — from wireframing in Figma to deploying production-ready applications.</p>
+          <p>Proficient in the MERN stack, Python/Django/Flask, and RESTful API integration, I love translating user needs into clean, accessible digital products — from wireframing in Figma to deploying production-ready applications on Railway and Render.</p>
           <p>When I'm not coding, I mentor peers in web development and actively contribute to my college's Student Guidance Cell.</p>
         </div>
         <div class="about-stats reveal delay-3">
           <div class="stat-card"><div class="stat-num">3+</div><div class="stat-label">Internships</div></div>
           <div class="stat-card"><div class="stat-num">8.3</div><div class="stat-label">CGPA</div></div>
-          <div class="stat-card"><div class="stat-num">6+</div><div class="stat-label">Certifications</div></div>
+          <div class="stat-card"><div class="stat-num">7+</div><div class="stat-label">Certifications</div></div>
         </div>
       </div>
     </div>
@@ -307,7 +282,7 @@
       <div class="skill-category reveal delay-1">
         <div class="skill-cat-icon">⚡</div>
         <div class="skill-cat-title">Languages</div>
-        <div><span class="skill-tag">Python</span><span class="skill-tag">JavaScript (ES6+)</span><span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span></div>
+        <div><span class="skill-tag">Python</span><span class="skill-tag">JavaScript (ES6+)</span><span class="skill-tag">C</span><span class="skill-tag">C++</span><span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span><span class="skill-tag">PLpgSQL</span></div>
       </div>
       <div class="skill-category reveal delay-2">
         <div class="skill-cat-icon">🎨</div>
@@ -317,14 +292,19 @@
       <div class="skill-category reveal delay-3">
         <div class="skill-cat-icon">🔧</div>
         <div class="skill-cat-title">Backend</div>
-        <div><span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span class="skill-tag">Python/Flask</span><span class="skill-tag">RESTful APIs</span></div>
+        <div><span class="skill-tag">Node.js</span><span class="skill-tag">Express.js</span><span class="skill-tag">Python/Django</span><span class="skill-tag">Python/Flask</span><span class="skill-tag">RESTful APIs</span><span class="skill-tag">JWT Authentication</span></div>
       </div>
       <div class="skill-category reveal delay-1">
+        <div class="skill-cat-icon">🤖</div>
+        <div class="skill-cat-title">ML / AI</div>
+        <div><span class="skill-tag">TensorFlow</span><span class="skill-tag">Keras</span><span class="skill-tag">MobileNet</span></div>
+      </div>
+      <div class="skill-category reveal delay-2">
         <div class="skill-cat-icon">🗄️</div>
         <div class="skill-cat-title">Databases</div>
         <div><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">SQL</span><span class="skill-tag">Neon PostgreSQL</span></div>
       </div>
-      <div class="skill-category reveal delay-2">
+      <div class="skill-category reveal delay-3">
         <div class="skill-cat-icon">🛠️</div>
         <div class="skill-cat-title">Tools &amp; Platforms</div>
         <div>
@@ -333,12 +313,14 @@
           <span class="skill-tag">VS Code</span>
           <span class="skill-tag">Postman</span>
           <span class="skill-tag">npm</span>
+          <span class="skill-tag">Docker</span>
           <span class="skill-tag">Render</span>
+          <span class="skill-tag">Railway</span>
           <span class="skill-tag">Netlify</span>
           <span class="skill-tag">Brevo SMTP</span>
         </div>
       </div>
-      <div class="skill-category reveal delay-3">
+      <div class="skill-category reveal delay-1">
         <div class="skill-cat-icon">🤝</div>
         <div class="skill-cat-title">Soft Skills</div>
         <div><span class="skill-tag">Team Collaboration</span><span class="skill-tag">Problem-Solving</span><span class="skill-tag">Time Management</span><span class="skill-tag">Communication</span></div>
@@ -359,10 +341,11 @@
             <div><div class="timeline-role">UI/UX Designer Intern</div><div class="timeline-company">CodSoft Technologies</div></div>
             <span class="timeline-period">Aug 2025 – Oct 2025</span>
           </div>
+          <div class="timeline-stack">Stack: Figma, HTML, CSS</div>
           <div class="timeline-desc"><ul>
-            <li>Designed wireframes, mock-ups, and high-fidelity prototypes for 3+ web and mobile app screens in Figma, improving visual hierarchy and accessibility compliance.</li>
-            <li>Collaborated with cross-functional teams to translate design specs into pixel-accurate implementations, ensuring brand consistency.</li>
-            <li>Conducted usability reviews and iterated on UI components to improve visual hierarchy and accessibility compliance.</li>
+            <li>Designed wireframes, mockups, and high-fidelity prototypes for 3+ web and mobile app screens, cutting developer revision cycles by eliminating design ambiguity before handoff.</li>
+            <li>Collaborated with cross-functional team to translate Figma specs into pixel-accurate implementations, maintaining brand consistency across all screens.</li>
+            <li>Audited UI components for WCAG accessibility compliance and iterated on visual hierarchy to improve readability and user flow.</li>
           </ul></div>
         </div>
       </div>
@@ -372,10 +355,11 @@
             <div><div class="timeline-role">Web Developer Intern</div><div class="timeline-company">Coding Samurai</div></div>
             <span class="timeline-period">Jun 2025 – Aug 2025</span>
           </div>
+          <div class="timeline-stack">Stack: HTML, CSS, JavaScript, Python/Flask, RESTful APIs</div>
           <div class="timeline-desc"><ul>
-            <li>Built a full-stack productivity platform with authentication,real-time reminders, push notifications, and health tracking,serving as an all-in-one personal management dashboard.</li>
-            <li>Integrated RESTful APIs for dynamic data rendering, contributing to 2 client-facing features in an Agile team environment.</li>
-            <li>Debugged frontend-backend integration issues, reducing reported UI bugs across the project sprint cycle.</li>
+            <li>Built and maintained responsive web applications improving cross-device compatibility across 2 client-facing features delivered in an Agile sprint environment.</li>
+            <li>Integrated RESTful APIs for dynamic data rendering, contributing both features on schedule within the sprint cycle.</li>
+            <li>Resolved frontend-backend integration bugs through systematic root-cause analysis, reducing open UI defect count each sprint.</li>
           </ul></div>
         </div>
       </div>
@@ -383,11 +367,12 @@
         <div class="timeline-card">
           <div class="timeline-header">
             <div><div class="timeline-role">Developer Intern</div><div class="timeline-company">HJAUTECH</div></div>
-            <span class="timeline-period">Sep 2025 - Oct 2025</span>
+            <span class="timeline-period">Aug 2025 – Sep 2025</span>
           </div>
+          <div class="timeline-stack">Stack: Git, Agile/Scrum, Full SDLC</div>
           <div class="timeline-desc"><ul>
-            <li>Participated in the full SDLC from requirement gathering and coding to testing and deployment in a team of 4 developers.</li>
-            <li>Consistently met weekly sprint deadlines and adopted Git-based version control and code review best practices.</li>
+            <li>Contributed across the full SDLC — requirements, coding, testing, and deployment — as 1 of 4 developers on a collaborative team project.</li>
+            <li>Maintained 100% on-time sprint delivery; enforced Git branching and peer code review standards throughout the project lifecycle.</li>
           </ul></div>
         </div>
       </div>
@@ -401,29 +386,33 @@
     <h2 class="section-title reveal delay-1">Featured <span>Projects</span></h2>
     <div class="section-line reveal delay-1"></div>
     <div class="projects-grid">
+
       <div class="project-card reveal delay-1">
-        <div class="project-icon">🌟</div>
-        <div class="project-title">Life Hub — Personal Productivity &amp; Wellness App</div>
-        <p class="project-desc">A full-stack dashboard for task management, expense tracking, health monitoring, reminders, and weather insights. Built with responsive UI components and RESTful APIs using Node.js, Express.js, and PostgreSQL.</p>
+        <div class="project-icon">🔍</div>
+        <div class="project-title">Image Forgery Detection</div>
+        <p class="project-desc">An AI-powered web application that detects digitally altered or photoshopped images using a MobileNet deep learning model. Features user authentication, session management, an image upload pipeline with in-memory processing, and a results dashboard — deployed live on Railway.</p>
         <div class="tech-stack">
-          <span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">Express.js</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">REST APIs</span>
+          <span class="tech-pill">Python</span><span class="tech-pill">Django</span><span class="tech-pill">TensorFlow</span><span class="tech-pill">Keras</span><span class="tech-pill">MobileNet</span><span class="tech-pill">Railway</span>
         </div>
-        <div style="margin-top:1.2rem;">
-  <a href="https://github.com/Zainaafreen/LifeHub"
-     target="_blank" rel="noopener noreferrer"
-     class="btn-outline"
-     style="padding:0.6rem 1rem;font-size:0.82rem;">
-     View Repository
-  </a>
-  <a href="https://lifehub-frontend-dtp4.onrender.com"
-     target="_blank"
-     rel="noopener noreferrer"
-     class="btn-primary"
-     style="padding:0.6rem 1rem;font-size:0.82rem;">
-     Live Demo
-  </a>
-</div>
+        <div class="project-links">
+          <a href="https://github.com/Zainaafreen/image_forgery" target="_blank" rel="noopener noreferrer" class="btn-outline" style="padding:0.6rem 1rem;font-size:0.82rem;">View Repository</a>
+          <a href="https://imageforgery-production-2759.up.railway.app/" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.6rem 1rem;font-size:0.82rem;">Live Demo</a>
+        </div>
       </div>
+
+      <div class="project-card reveal delay-2">
+        <div class="project-icon">🌟</div>
+        <div class="project-title">LifeHub — Personal Productivity &amp; Wellness App</div>
+        <p class="project-desc">A full-stack dashboard for task management, expense tracking, health monitoring, push-notification reminders, and live weather insights. Built 10+ reusable React components with full mobile responsiveness. Containerized with Docker and deployed on Render.</p>
+        <div class="tech-stack">
+          <span class="tech-pill">JavaScript</span><span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">Express.js</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">PLpgSQL</span><span class="tech-pill">Docker</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Zainaafreen/LifeHub" target="_blank" rel="noopener noreferrer" class="btn-outline" style="padding:0.6rem 1rem;font-size:0.82rem;">View Repository</a>
+          <a href="https://lifehub-frontend-dtp4.onrender.com" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.6rem 1rem;font-size:0.82rem;">Live Demo</a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -450,9 +439,9 @@
       </div>
     </div>
     <div class="certs-grid">
-      <div class="cert-card reveal delay-1"><span class="cert-dot"></span><div class="cert-text"><strong>Full-Stack Web Development</strong>Udemy</div></div>
-      <div class="cert-card reveal delay-2"><span class="cert-dot"></span><div class="cert-text"><strong>Data Analytics</strong>Google (Coursera)</div></div>
-      <div class="cert-card reveal delay-3"><span class="cert-dot"></span><div class="cert-text"><strong>Cloud Engineering</strong>Google (Coursera)</div></div>
+      <div class="cert-card reveal delay-1"><span class="cert-dot"></span><div class="cert-text"><strong>100 Days of Python (Angela Yu)</strong>Udemy</div></div>
+      <div class="cert-card reveal delay-2"><span class="cert-dot"></span><div class="cert-text"><strong>Full-Stack Web Development</strong>Udemy</div></div>
+      <div class="cert-card reveal delay-3"><span class="cert-dot"></span><div class="cert-text"><strong>Data Analytics &amp; Cloud Engineering</strong>Google (Coursera)</div></div>
       <div class="cert-card reveal delay-1"><span class="cert-dot"></span><div class="cert-text"><strong>Software Engineering Program</strong>Accenture (Forage)</div></div>
       <div class="cert-card reveal delay-2"><span class="cert-dot"></span><div class="cert-text"><strong>Data Science &amp; Analyst Certification</strong>Deloitte (Forage)</div></div>
       <div class="cert-card reveal delay-3"><span class="cert-dot"></span><div class="cert-text"><strong>Advanced Software Engineering</strong>Walmart Global Tech (Forage)</div></div>
@@ -507,10 +496,10 @@ let isDark = true;
 function toggleTheme() {
   isDark = !isDark;
   if (isDark) {
-  document.documentElement.removeAttribute('data-theme');
-} else {
-  document.documentElement.setAttribute('data-theme', 'light');
-}
+    document.documentElement.removeAttribute('data-theme');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'light');
+  }
   document.getElementById('t-icon').textContent = isDark ? '☀️' : '🌙';
   document.getElementById('t-lbl').textContent = isDark ? 'Light' : 'Dark';
   updateNav();
